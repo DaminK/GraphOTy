@@ -31,7 +31,7 @@ def swap_axes_list(L):
     return [[i for i in element if i is not None] for element in  list(zip_longest(*L))]
 
 
-def fw(embeddings,features=None,alpha=None,beta=None,metric='sqeuclidean',return_plans=False,balance_weights=True,save_ram=False,threads=2):
+def fused_wasserstein(embeddings,features=None,alpha=None,beta=None,metric='sqeuclidean',return_plans=False,balance_weights=True,save_ram=False,threads=2):
     """_summary_
     Computes the Fused Non-Gromov Wasserstein Distance
 
@@ -176,7 +176,7 @@ def pairwise_fngw(graph1_spaces,graph2_spaces,alpha,beta,i=None,j=None,balancing
 
 
 
-def fgw(embeddings,features=None,alpha=None,beta=None,metric='sqeuclidean',return_plans=False,balance_weights=False,save_ram=False,threads=2):
+def fused_gromov_wasserstein(embeddings,features=None,alpha=None,beta=None,metric='sqeuclidean',return_plans=False,balance_weights=False,save_ram=False,threads=2):
     """_summary_
     Computes the Fused Gromov Wasserstein Distance
 

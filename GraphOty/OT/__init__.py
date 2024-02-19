@@ -1,0 +1,1 @@
+from .fused import fused_wasserstein, fused_gromov_wasserstein 

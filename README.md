@@ -3,3 +3,5 @@
 # GraphOTy
 Graph Optimal Transport as a Python Package. 
 
+@Lennard, look into 'examples/FusedWasserstein_SyntheticMultiplex.ipynb', not cleaned up yet but already changed imports according to new structure = should be functional for you with the appropriate env (many dependencies, will provide an appropriate list for pypi dependencies). 
+

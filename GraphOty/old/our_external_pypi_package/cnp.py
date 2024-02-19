@@ -21,11 +21,11 @@ def indicator_matrix_from_colors(colors: list,
 def cnp(A : sparse.csr_matrix, 
         c : int, 
         d : int, 
-        num_inits=1, 
+        num_inits=100, 
         H=None, 
         pca_dim=None, 
-        normalized=False, 
-        row_normalized=False, 
+        normalized=True, 
+        row_normalized=True, 
         sort=False):
     
     F = np.zeros((A.shape[0], c, d+1))

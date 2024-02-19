@@ -9,7 +9,7 @@ from os import path
 import time
 
 sys.path.append( path.dirname( path.dirname( path.abspath(__file__) ) ) )
-from our_external_pypi_package import cnp
+from embedding import cnp
 
 from .plot_multinet import plot_multiplex, plot_adj, plot_attributes, plot_structure, plot_attributes_and_structure
 
