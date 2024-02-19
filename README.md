@@ -1,7 +1,7 @@
 <img src="https://github.com/DaminK/GraphOT/blob/main/doc/images/graphOty.png?raw=true" alt="GraphOty Logo" width="250" height="250">
 
 # GraphOTy
-A **Graph** **O**ptimal **T**ransport P**y**thon Package. 
+A **Graph** **O**ptimal **T**ransport P**y**thon Package.  (Maybe we call it GraphOtty etc.)
 
 @Lennard, look into 'examples/FusedWasserstein_SyntheticMultiplex.ipynb', not cleaned up yet but already changed imports according to new structure = should be functional for you with the appropriate env (many dependencies, will provide an appropriate list for pypi dependencies). 
 
