@@ -93,7 +93,7 @@ class Multiplex(object):
             raise Exception(f"Saving as {save_path.suffix} is not supported")
         
 
-    def structural_embedding(self,save_path=None,name=None,ground_truth=None,method="HenHoe2Vec",**kwargs):
+    def structural_embedding(self,save_path=None,name=None,ground_truth=None,method="HenHoe2Vec",plot=False,**kwargs):
         st = time.time()
         if method=="HenHoe2Vec":
             #Run high-dimensioanl structural embedding
@@ -144,10 +144,11 @@ class Multiplex(object):
             self.structural_embd_2D['block'] = ["unknown" for node in self.structural_embd_2D['node']]
 
         #Plot 2D embedding of highdimensional strutural representation
-        if self.node_attributes is not None:
-            self.plot_attr_and_struct()
-        else:
-            plot_structure(S_2D=self.structural_embd_2D)
+        if plot:
+            if self.node_attributes is not None:
+                self.plot_attr_and_struct()
+            else:
+                plot_structure(S_2D=self.structural_embd_2D)
 
         #Add metadata to high-dimensional embedding
         if self.structural_embd_df is not None:
