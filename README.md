@@ -1,7 +1,7 @@
 <img src="https://github.com/DaminK/GraphOT/blob/main/doc/images/graphOty.png?raw=true" alt="GraphOty Logo" width="250" height="250">
 
 # GraphOTy
-A **Graph** **O**ptimal **T**ransport P**y**thon Package.  (Maybe we call it GraphOtty etc.)
+A **Graph** **O**ptimal **T**ransport P**y**thon Package.
 
 GraphOty has the following submodules:
 * benchmark - evaluate performance of clustering, etc.
