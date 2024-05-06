@@ -3,14 +3,10 @@
 # GraphOTy
 A **Graph** **O**ptimal **T**ransport P**y**thon Package.  (Maybe we call it GraphOtty etc.)
 
-@Lennard, look into 'examples/FusedWasserstein_SyntheticMultiplex.ipynb', not cleaned up yet but already changed imports according to new structure = should be functional for you with the appropriate env (many dependencies, will provide an appropriate list for pypi dependencies). 
-
 GraphOty has the following submodules:
-* benchmark #evaluate performance of clustering etc.  (maybe "competitor" embeddings here)
-* data #loading of external data formats, e.g. anndata or spm (maybe as own package?)
-* embedding #CCB, CNP embedding, (maybe "competitor" embeddings here)
-* graph #Multiplex Graph Classes, helper functions, graph generators
-* old   #Old Code that might be integrated in the future
-* OT #FusedWasserstein, FusedGromovWasserstein, 
-* plot #Visualization
-* tests #Unit tests, code coverage
+* benchmark - evaluate performance of clustering, etc.
+* data - loading of external data formats, e.g. anndata or spm
+* embedding - CCB and CNP embedding methods, plus HenHoe2Vec for comparison
+* graph - Multiplex Graph Classes, helper functions, synthetic graph generators
+* OT - Fused Wasserstein, Fused Gromov-Wasserstein
+* plot - Visualization
